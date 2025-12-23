@@ -1,14 +1,15 @@
 <script>
-    import nstrLogo from '../figmaAssets/Logos/nstrpathway.svg'
-    import kurmerLogo from '../figmaAssets/Logos/kurmer.svg'
-    import lanasionalLogo from '../figmaAssets/Logos/LANasional.svg'
-    import libraryBG from '../backgrounds/library.png'
+    import nstrLogo from '../../figmaAssets/Logos/nstrpathway.svg'
+    import kurmerLogo from '../../figmaAssets/Logos/kurmer.svg'
+    import lanasionalLogo from '../../figmaAssets/Logos/LANasional.svg'
+    import libraryBG from '../../backgrounds/library.png'
+    
 </script>
 
 <div id="home">
     <div id="upperHalfDiv">
         <img id="nstrLogo" class="logo" src={nstrLogo} alt="Nusantara Pathway">
-        <h1 id="upperHalfText">NUSANTARA PATHWAY</h1>
+        <h1 id="upperHalfText">Nusantara Pathway</h1>
         <p>Jalur Matematika SMA Berorientasi Internasional</p>
     </div>
     <div id="lowerHalfDiv">
@@ -33,7 +34,7 @@
         flex-direction: column;
         justify-content: space-between;
         
-        background: url('../backgrounds/graduate.png');
+        background: #30f830;
         background-size: cover;
     }
 

@@ -4,10 +4,12 @@
     import PageSection from '../components/pageSection.svelte';
     
     
-    import Home from '../components/home.svelte';
+    import Home from '../components/pages/home.svelte';
+    import Greenscreen from '../components/greenscreen.svelte';
 
 </script>
 
+<Greenscreen />
 <Navbar></Navbar>
     <Home />
 <PageSection>
