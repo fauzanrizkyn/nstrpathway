@@ -40,7 +40,7 @@
 			<img bind:this={hamburgir} id="hamburger" src={Hamburger} alt="hamburgir :)" />
 		</button>
 </div>
-<div bind:this={navbarMobile} class="navbarItems" id="links">
+<div bind:this={navbarMobile} class="navbarItems" id="linksMobile">
 		<a on:click={navbarTrigger} href="./">Home</a>
 		<a on:click={navbarTrigger} href="./#about">About</a>
 		<a on:click={navbarTrigger} href="./#roadmap">Roadmap</a>
@@ -88,6 +88,10 @@
 		justify-content: space-between;
 	}
 
+    #linksMobile {
+        display: none;
+    }
+
 	a {
 		text-decoration: none;
 		color: black;
@@ -128,7 +132,7 @@
 			display: none;
 		}
 
-        #links {
+        #linksMobile {
             flex-direction: column;
             justify-content: center;
             gap: 50px;
@@ -139,6 +143,7 @@
             opacity: 0%;
             width: 100%;
             margin-top: 58px;
+            display: flex;
         }
 
         a {
