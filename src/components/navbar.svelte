@@ -1,11 +1,13 @@
 <script>
 	import NusantaraPLogo from '../figmaAssets/Logos/NSTR_Outlined_Logo.svg';
 	import Hamburger from '../figmaAssets/Other/Hamburger.svg';
+	import HamburgerSad from '../figmaAssets/Other/HamburgerSad.svg'
 
     let navbarMobile;
     let navbarStatus = "closed"
     
     let hamburgir;
+	let hamburgirSad;
 
 	const navbarTrigger = () => {
         if (navbarStatus == "closed") {
@@ -13,12 +15,22 @@
             navbarStatus = "open"
             
             hamburgir.style.transform = "rotate(180deg)"
+			hamburgir.style.filter = "blur(10px)"
+			hamburgir.style.opacity = 0
+
+			hamburgirSad.style.opacity = 1
+			hamburgirSad.style.transform = "rotate(180deg)"
         }
 		else {
             navbarMobile.style.opacity = "0%"
             navbarStatus = "closed"
 
             hamburgir.style.transform = "rotate(0deg)"
+			hamburgir.style.opacity = 1
+			hamburgir.style.filter = "blur(0px)"
+
+			hamburgirSad.style.opacity = 0
+			hamburgirSad.style.transform = "rotate(0deg)"
         }
 	};
 </script>
@@ -36,8 +48,9 @@
 <div id="navbarMobile">
 	
 		<img class="navbarItems" id="NusantaraLogo" src={NusantaraPLogo} alt="nusantar pathway" />
-		<button on:click={navbarTrigger}>
-			<img bind:this={hamburgir} id="hamburger" src={Hamburger} alt="hamburgir :)" />
+		<button id="plate" on:click={navbarTrigger}>
+			<img class="navbarButton" bind:this={hamburgir} id="hamburger" src={Hamburger} alt="hamburgir :)" />
+			<img class="navbarButton" bind:this={hamburgirSad} id="hamburgerSad" src={HamburgerSad} alt="hamburgir :(" />
 		</button>
 </div>
 <div bind:this={navbarMobile} class="navbarItems" id="linksMobile">
@@ -124,8 +137,25 @@
 			box-sizing: border-box;
 		}
 
-        #hamburger {
+        .navbarButton {
 			height: 100%;
+			position: absolute;
+		}
+
+		#plate {
+			position: relative;
+		}
+
+		#hamburger {
+			right: 100%;
+			top: 0;
+		}
+
+		#hamburgerSad {
+
+			right: 100%;
+			top: 0;
+			z-index: -1;
 		}
 
 		#navbar {
