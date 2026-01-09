@@ -32,6 +32,8 @@
 			hamburgirSad.style.opacity = 0
 			hamburgirSad.style.transform = "rotate(0deg)"
         }
+
+		//HEY ANTEK ANTEK ASHINGGG !n!
 	};
 </script>
 

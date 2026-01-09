@@ -210,16 +210,11 @@ Berorientasi pada:</strong></p>
 		display: none;
 	}
 
-	.img-container {
-		display: flex;
-		align-items: center; /* Keeps arrows centered vertically in their row */
-		justify-content: center;
-		gap: -50px;
-	}
+	
 
 	img {
-		width: 100%; /* Spans the full width of the grid column */
-		height: auto;
+		width:85%; /* Spans the full width of the grid column */
+		height: 95%;
 	}
 
 	.roadmapEntryDesc {
@@ -277,5 +272,14 @@ Berorientasi pada:</strong></p>
 		/* No gap between columns to keep arrows touching */
 		gap: 25px;
 		}
+
+		.roadmapEntryDesc {
+			width: 100%;
+		}
+
+		img {
+		width:100%; /* Spans the full width of the grid column */
+		height: 95%;
+	}
 	}
 </style>
