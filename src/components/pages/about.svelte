@@ -11,9 +11,7 @@
 				<h1>Pathway</h1>
 			</div>
 		</div>
-		<div class="halfVertical">
-			<img id="aboutInfo" src={AboutInfo} alt="AboutInfo" />
-		</div>
+		
 	</div>
 	<div id="aboutDescriptionContainer" class="halfHorizontal">
 		<div id="aboutDescription" class="halfHorizontal">
@@ -44,10 +42,6 @@
 
 		display: flex;
 		flex-direction: row;
-	}
-
-	#aboutInfo {
-		height: 100%;
 	}
 
 	.halfHorizontal {
@@ -136,8 +130,5 @@
 			justify-content: space-between;
 		}
 
-		#aboutInfo {
-			height: 100%;
-		}
 	}
 </style>
