@@ -1,18 +1,18 @@
 <script>
+	import { fade } from 'svelte/transition';
 	import NusantaraPLogo from '../figmaAssets/Logos/NSTR_Outlined_Logo.svg';
 	import Hamburger from '../figmaAssets/Other/Hamburger.svg';
 	import HamburgerSad from '../figmaAssets/Other/HamburgerSad.svg'
 
     let navbarMobile;
-    let navbarStatus = "closed"
+    let navbarStatus = false
     
     let hamburgir;
 	let hamburgirSad;
 
 	const navbarTrigger = () => {
-        if (navbarStatus == "closed") {
-            navbarMobile.style.opacity = "100%"
-            navbarStatus = "open"
+        if (navbarStatus == false) {
+            navbarStatus = true
             
             hamburgir.style.transform = "rotate(180deg)"
 			hamburgir.style.filter = "blur(10px)"
@@ -22,9 +22,7 @@
 			hamburgirSad.style.transform = "rotate(180deg)"
         }
 		else {
-            navbarMobile.style.opacity = "0%"
-            navbarStatus = "closed"
-
+            navbarStatus = false
             hamburgir.style.transform = "rotate(0deg)"
 			hamburgir.style.opacity = 1
 			hamburgir.style.filter = "blur(0px)"
@@ -55,12 +53,14 @@
 			<img class="navbarButton" bind:this={hamburgirSad} id="hamburgerSad" src={HamburgerSad} alt="hamburgir :(" />
 		</button>
 </div>
-<div bind:this={navbarMobile} class="navbarItems" id="linksMobile">
+{#if navbarStatus}
+<div transition:fade="{{ duration: 250 }}" bind:this={navbarMobile} class="navbarItems" id="linksMobile">
 		<a on:click={navbarTrigger} href="./">Home</a>
 		<a on:click={navbarTrigger} href="./#about">About</a>
 		<a on:click={navbarTrigger} href="./#roadmap">Roadmap</a>
 		<a on:click={navbarTrigger} href="./#approach">Approach</a>
-	</div>
+</div>
+{/if}
 
 <style>
 	* {
@@ -172,7 +172,7 @@
             background-color: #d1d0d0;
 
             position: fixed;
-            opacity: 0%;
+            opacity: 100%;
             width: 100%;
             margin-top: 58px;
             display: flex;

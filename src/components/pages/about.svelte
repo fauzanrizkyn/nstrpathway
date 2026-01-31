@@ -103,7 +103,7 @@
 		
 		#about {
 			flex-direction: column;
-			height: calc(120vh + 58px);
+			height: fit-content;
 
 			padding-left: 1.5%;
 			padding-top: 58px;
@@ -112,7 +112,7 @@
 		#aboutMain {
 			display: flex;
 			flex-direction: column;
-			height: 35%;
+			height: fit-content;
 		}
 
 		#nstrTitle {
@@ -123,7 +123,7 @@
 
 		#aboutDescriptionContainer {
 			width: 100%;
-			height: 65%;
+			height: fit-content;
 		}
 
 		#aboutDescription {
@@ -132,7 +132,7 @@
 
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			gap: 3vh;
 		}
 
 	}

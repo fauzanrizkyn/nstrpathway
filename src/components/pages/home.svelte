@@ -30,6 +30,10 @@
     h1, p {
         text-align: right;
     }
+
+    /* p {
+        color: rgb(0, 0, 0);
+    } */
     #home {
         color: white;
         width: 100%;
@@ -38,7 +42,7 @@
         flex-direction: column;
         justify-content: space-between;
         
-        background: url('../../backgrounds/homebg_alt.webp');
+        background: url('../../backgrounds/graduate.jpg');
         background-size: cover;
         background-position: center;
     }
