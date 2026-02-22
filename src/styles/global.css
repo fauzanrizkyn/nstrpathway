@@ -13,6 +13,10 @@
     /* border: 0.01px solid red; */
 }
 
+[id] {
+  scroll-margin-top: 58px;
+}
+
 html {
   height: fit-content;
 }

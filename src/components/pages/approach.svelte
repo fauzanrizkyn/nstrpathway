@@ -46,7 +46,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		width: 100%;
 		height: auto;
-		margin-top: calc(15vh + 58px);
+		
 	}
 
 	#secondImage {

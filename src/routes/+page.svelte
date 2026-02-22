@@ -9,6 +9,9 @@
     import Greenscreen from '../components/greenscreen.svelte';
     
     import About from '../components/pages/about.svelte';
+    import Subjects from '../components/pages/subjects.svelte';
+    import Books from '../components/pages/books.svelte';
+    import Teams from '../components/pages/teams.svelte';
     import Roadmap from '../components/pages/roadmap.svelte';
     import Approach from '../components/pages/approach.svelte';
 
@@ -21,6 +24,15 @@
     <Home />
 <PageSectionFlex>
     <About />
+</PageSectionFlex>
+<PageSectionFlex>
+    <Subjects />
+</PageSectionFlex>
+<PageSectionFlex>
+    <Books />
+</PageSectionFlex>
+<PageSectionFlex>
+    <Teams />
 </PageSectionFlex>
 <PageSection>
     <Roadmap />

@@ -42,6 +42,9 @@
 		<a href="./">Home</a>
 		<a href="./#about">About</a>
 		<a href="./#roadmap">Roadmap</a>
+		<a href="./#subjects">Subjects</a>
+		<a href="./#books">Books</a>
+		<a href="./#teams">Teams</a>
 		<a href="./#approach">Approach</a>
 	</div>
 </div>

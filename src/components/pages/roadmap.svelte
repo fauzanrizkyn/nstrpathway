@@ -4,7 +4,7 @@
 	import Akselerasi from '../../figmaAssets/roadmap/roadmapAkselerasi.svg';
 	import Profisiensi from '../../figmaAssets/roadmap/roadmapProfisiensi.svg';
 
-    import nstrLogo from '../../figmaAssets/Logos/NSTR_Outlined_Logo.svg'
+    import nstrLogo from '../../figmaAssets/Logos/NSTR_Outlined_Logo-Crop.svg'
 </script>
 
 <div id="roadmap">
@@ -187,13 +187,12 @@ Berorientasi pada:</strong></p>
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-
-		margin-top: 58px;
 	}
 
 	#logo {
 		align-self: flex-start;
         width: 17.5%;
+		height: 10%;
 	}
 
 	#roadmap-desktop {
