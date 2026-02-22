@@ -200,6 +200,7 @@ Berorientasi pada:</strong></p>
 		/* Creates 4 equal columns */
 		grid-template-columns: repeat(4, 1fr);
 		width: 100%;
+		height: 90%;
 		padding-top: 25px;
 		/* No gap between columns to keep arrows touching */
 		gap: 0;
